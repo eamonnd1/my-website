@@ -20,7 +20,7 @@ a {
 
 /* Hero Section */
 #hero {
-  background-image: url(./images/Me_at_Anfield.jpg);
+  background-image: url(./images/mane.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -59,6 +59,7 @@ a {
   animation-delay: 2s;
 }
 #hero h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
   animation-delay: 3s;
 }
 #hero h1 span {
@@ -99,6 +100,70 @@ a {
 }
 /* End Hero Section */
 
+/* Services Section */
+#services {
+}
+#services .service {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#services .section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+#services .section-title span {
+  color: firebrick;
+}
+#services .service-top p {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+#services .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#services .service-item {
+  flex-basis: 80%;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(/images/lfc_crowd.jpg);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+}
+#services .service-item::after {
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: -1;
+}
+/* End Services Section */
+
 /* Keyframes */
 @keyframes text_reveal_box {
   50% {
@@ -113,6 +178,12 @@ a {
 @keyframes text_reveal {
   100% {
     color: white;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: firebrick;
+    font-weight: 700;
   }
 }
 /* End Keyframes */

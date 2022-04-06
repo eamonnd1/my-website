@@ -3,12 +3,46 @@ html body {
     font-family: sans-serif;
 }
 
-#title {
+#home {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
 
+.homeBtn {
+    font-size: 1.5rem;
+    color: #000000;
+    border: 3px solid #000000;
+    background-color: #f00000;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.homeBtn:hover {
+    color: #f00000;
+    border: 3px solid #000000;
+    background-color: #000000;
+    transform: translateY(-4px);
+    box-shadow: 3px 3px 10px #ffffff;
+}
+
+.homeBtn:active {
+    color: #f00000;
+    border: 3px solid #000000;
+    background-color: #000000;
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 5px #ffffff;
+}
+
+.imgGallery {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
 
 .bgImg {
